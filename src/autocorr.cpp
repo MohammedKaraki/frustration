@@ -1,3 +1,6 @@
+// This program was written to get rough estimates of how big autocorrelation
+// times can be
+
 #include <iostream>
 #include <fstream>
 #include <vector>
