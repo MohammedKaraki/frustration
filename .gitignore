@@ -1,5 +1,6 @@
 /*
 !.gitignore
+!makefile
 !src/
 src/*
 !src/generic_lattice.h
