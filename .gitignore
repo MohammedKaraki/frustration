@@ -1,0 +1,10 @@
+/*
+!.gitignore
+!src/
+src/*
+!src/generic_lattice.h
+!src/collect.cpp
+!src/plot_data.py
+!src/plot_therm.py
+!src/tau.cpp
+!data/
