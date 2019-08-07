@@ -5,7 +5,7 @@ import numpy as np
 
 L = input("Enter L: ")
 
-filename = '../data/collecting-L' + L + '.txt'
+filename = '../data/collecting-L' + L + '.hx.txt'
 
 
 with open(filename, 'r') as file:
@@ -35,7 +35,12 @@ print (ene_err)
 plt.figure(figsize=(12,7))
 plt.subplot(211)
 plt.errorbar(field, ene, yerr=ene_err)
+plt.ylabel("Energy")
+plt.title("Err Bars 1000x smaller")
 plt.subplot(212)
 plt.plot(field, binder)
+plt.ylabel("Energy Binder Cumulant")
+plt.xlabel("Field")
+
 
 plt.show()

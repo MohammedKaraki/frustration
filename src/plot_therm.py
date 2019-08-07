@@ -5,7 +5,7 @@ import numpy as np
 
 L = input("Enter L: ")
 
-filename = '../data/thermalization-L' + L + '.txt'
+filename = '../data/thermalization-L' + L + '.hx.txt'
 
 with open(filename, 'r') as file:
     lines = []
@@ -22,11 +22,13 @@ with open(filename, 'r') as file:
 
 plt.figure(figsize=(12,7))
 plt.subplot(311)
+plt.ylabel("energy")
 # plt.ylim([-500,0])
 plt.plot(x, ene)
 plt.subplot(312)
 plt.plot(x, mag)
 plt.subplot(313)
 plt.plot(x, tim)
+plt.xlabel("step")
 
 plt.show()

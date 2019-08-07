@@ -23,7 +23,7 @@ const double field_min = 0.5,
       field_step = .1;
 
 ising::generic<nx, ny, nt,
-    ising::lattice_structure::hexagonal> lattice(beta, field_min);
+    ising::lattice_structure::square> lattice(beta, field_min);
 
 
 void out(std::ostream &file_out, const std::string &str) {
@@ -120,8 +120,8 @@ void collect(std::string file_name) {
 }
 
 int main() {
-    thermalize(fmt::format("data/thermalization-L{}.txt", L));
-    collect(fmt::format("data/collecting-L{}.txt", L));
+    thermalize(fmt::format("data/thermalization-L{}.sq.txt", L));
+    collect(fmt::format("data/collecting-L{}.sq.txt", L));
 
     return 0;
 }
