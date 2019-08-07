@@ -7,6 +7,6 @@ src/*
 !src/collect.cpp
 !src/plot_data.py
 !src/plot_therm.py
-!src/tau.cpp
+!src/autocorr.cpp
 !data/
 !src/fmt/
