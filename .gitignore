@@ -8,3 +8,4 @@ src/*
 !src/plot_therm.py
 !src/tau.cpp
 !data/
+!src/fmt/
